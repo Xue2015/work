@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/topbar_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="#eeeeee"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+                android:text="账户中心"
+                android:textColor="#eeeeee"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="bottom"
+            android:text="用户名"
+            android:textColor="#EEEEEE"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="2"
+                    android:gravity="left|center"
+                    android:text="可用余额（元）"
+                    android:textColor="#eeeeee"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="累计收益(元）"
+                    android:textColor="#eeeeee"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/t_remainder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="3"
+                    android:gravity="left|center"
+                    android:text="0.00"
+                    android:textColor="#eeeeee"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/t_yeilds"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="0.00"
+                    android:textColor="#eeeeee"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--<LinearLayoutut-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp" -->
+    <!--android:orientation = "vertical"        -->
+    <!-->-->
+    <!-- -->
+    <!-- -->
+    <!--</LinearLayoutut>-->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="账户资产"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_account" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="我的银行卡"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_bank" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:text="已投项目"
+                android:layout_weight="1"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_project" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="债权转让"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_right" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:text="提现记录"
+                android:layout_weight="1"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_cash" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="交易明细"
+                android:id="@+id/btn_exchange"
+                android:textSize="20sp"
+
+                />
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+
+            <!--/>-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg3" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg5" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textSize="20sp"
+
+                android:id="@+id/btn_msg6" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottombar_bg">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_deposit"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="#eeeeee"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="#eeeeee"
+            android:textSize="20sp"
+            android:id="@+id/btn_recharge" />
+
+    </LinearLayout>
+</LinearLayout>
